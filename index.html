@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <style>
+      #map {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
       rel="stylesheet"
@@ -13,7 +19,7 @@
     <title>Google Maps Clone</title>
   </head>
   <body>
-    <div id="map" style="width: 400px; height: 300px"></div>
+    <div id="map"></div>
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiZXRoYW5tMjAwMSIsImEiOiJja2huZ2Y3cDAwa3M3MzNta3lndWM3OGN1In0.0rwJQZEZ7q_qUk8_mDSFGg";
