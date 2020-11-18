@@ -10,7 +10,17 @@
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>Google Maps Clone</title>
   </head>
-  <body></body>
+  <body>
+    <div id="map" style="width: 400px; height: 300px"></div>
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiZXRoYW5tMjAwMSIsImEiOiJja2huZ2Y3cDAwa3M3MzNta3lndWM3OGN1In0.0rwJQZEZ7q_qUk8_mDSFGg";
+      var map = new mapboxgl.Map({
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+      });
+    </script>
+  </body>
 </html>
