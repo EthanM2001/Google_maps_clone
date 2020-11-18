@@ -29,4 +29,6 @@ function setupMap(center) {
   });
 
   map.addControl(directions, "top-left");
+
+  const marker = new mapboxgl.Marker().setLngLat(center).addTo(map);
 }
